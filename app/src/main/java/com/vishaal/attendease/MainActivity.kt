@@ -1,6 +1,9 @@
 package com.vishaal.attendease
 
+import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -27,6 +30,12 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+
+        // Delay for 2 seconds (2000ms) before moving to MainActivity
+        Handler(Looper.getMainLooper()).postDelayed({
+            startActivity(Intent(this, LoginActivity::class.java))
+            finish() // Close SplashActivity so user can't go back
+        }, 2000)
     }
 }
 
