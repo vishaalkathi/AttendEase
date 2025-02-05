@@ -30,12 +30,6 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
-
-        // Delay for 2 seconds (2000ms) before moving to MainActivity
-        Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, LoginActivity::class.java))
-            finish() // Close SplashActivity so user can't go back
-        }, 2000)
     }
 }
 
