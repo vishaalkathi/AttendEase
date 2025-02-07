@@ -46,7 +46,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             android:gravity="center"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/black"/>
 
 
             <Button
@@ -181,5 +181,17 @@
                 android:textColor="@android:color/black"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_old_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Sign In"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_orange_light"
+        android:textColor="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        />
 
 </RelativeLayout>

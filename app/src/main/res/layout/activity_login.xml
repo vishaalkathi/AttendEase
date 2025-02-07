@@ -38,14 +38,14 @@
             android:padding="24dp">
 
             <EditText
-                android:id="@+id/email"
+                android:id="@+id/login_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter Email"
                 android:inputType="textEmailAddress"/>
 
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/login_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter Password"
@@ -63,5 +63,17 @@
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_new_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New User? Register here"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_orange_light"
+        android:textColor="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        />
 
 </RelativeLayout>
