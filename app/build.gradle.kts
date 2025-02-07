@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.vishaal.attendease"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.vishaal.attendease"
