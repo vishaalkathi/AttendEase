@@ -125,7 +125,7 @@ class RegistrationActivity : AppCompatActivity() {
                         "Email" to studEmail,
                         "Passwd" to studPasswd,
                         "Reg" to studReg,
-                        "Type" to "Teacher"
+                        "Type" to "Student"
                     )
                     val database = Firebase.database
                     val myRef = database.getReference("Users")
@@ -133,7 +133,7 @@ class RegistrationActivity : AppCompatActivity() {
                     myRef.child(userId).setValue(userDetails).addOnSuccessListener {
                         Toast.makeText(this, "Sign up was successful.", Toast.LENGTH_SHORT).show()
                         val intent = Intent(this, HomeActivity::class.java)
-                        intent.putExtra("Type", "Teacher")
+                        intent.putExtra("Type", "Student")
                         startActivity(intent)
                     }.addOnFailureListener {
                         val user = Firebase.auth.currentUser!!

@@ -65,4 +65,7 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:33.8.0"))
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-database")
+
+    implementation("com.journeyapps:zxing-android-embedded:4.1.0")
+    implementation ("org.apache.poi:poi-ooxml:5.2.3")
 }
